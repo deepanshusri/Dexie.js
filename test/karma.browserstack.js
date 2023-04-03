@@ -1,7 +1,8 @@
 module.exports = {
   browserStack: {
-    username: process.env.BROWSER_STACK_USERNAME,
-    accessKey: process.env.BROWSER_STACK_ACCESS_KEY,
+    username: System.getenv("LT_USERNAME") == null ? "Your LT Username" : System.getenv("LT_USERNAME"),
+    accessKey:System.getenv("LT_ACCESS_KEY") == null ? "Your LT AccessKey" : System.getenv("LT_ACCESS_KEY"),
+      
     timeout: 1800
   },
 
