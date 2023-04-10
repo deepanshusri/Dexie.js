@@ -24,5 +24,4 @@ module.exports = {
               pseudoActivityInterval: 15000 // 5000 ms heartbeat
           }
       },
-  }
 }
