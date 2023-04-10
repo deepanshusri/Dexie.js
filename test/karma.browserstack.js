@@ -1,4 +1,9 @@
 module.exports = {
+   var webdriverConfig = {
+      hostname: 'hub.lambdatest.com', //lambdatest hub address
+      port: 80
+  }
+
   browserStack: {
     username: System.getenv("LT_USERNAME") == null ? "Your LT Username" : System.getenv("LT_USERNAME"),
     accessKey:System.getenv("LT_ACCESS_KEY") == null ? "Your LT AccessKey" : System.getenv("LT_ACCESS_KEY"),
